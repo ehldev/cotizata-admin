@@ -1,0 +1,19 @@
+query GetCategoriaSlug($slugCategoria: String) {
+  GetCategoriaSlug(slugCategoria: $slugCategoria) {
+    categoriaId
+    slugCategoria
+    nombreCategoria
+    descripcionCategoria
+    ImagenPrincipal {
+      id
+      descripcion
+      url
+    }
+    ImagenSecundaria {
+      id
+      descripcion
+      url
+    }
+    KeywordsCategoria
+  }
+}

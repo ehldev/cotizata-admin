@@ -1,0 +1,8 @@
+query GetDistritos($ProCode: String) {
+  GetDistritos(ProCode: $ProCode) {
+    DistCodi
+    DistNom
+    ProvCodi
+    destacado
+  }
+}

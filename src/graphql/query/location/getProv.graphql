@@ -1,0 +1,7 @@
+query GetProvincias($DepCode: String) {
+  GetProvincias(DepCode: $DepCode) {
+    ProvCodi
+    ProvNom
+    DeparCodi
+  }
+}

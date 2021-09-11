@@ -1,0 +1,113 @@
+query GetAsesorPropiedades($numberPaginate: Int, $page: Int) {
+  GetAsesorPropiedades(numberPaginate: $numberPaginate, page: $page) {
+    NroItems
+    data {
+      lat
+      log
+      slug
+      pisos
+      video
+      titulo
+      estado
+      banios
+      cuartos
+      ambientes
+      destacado
+      direccion
+      antiguedad
+      dimensiones
+      propiedadId
+      tipoContrato
+      areaConstruida
+      descripcionCorta
+      descripcionCompleta
+      fotoPrincipal {
+        id
+        descripcion
+        url
+      }
+      fotoSecundaria {
+        id
+        descripcion
+        url
+      }
+      galeria {
+        id
+        descripcion
+        url
+      }
+      Departamento {
+        DeparCodi
+        DeparNom
+      }
+      Provincia {
+        ProvCodi
+        ProvNom
+        DeparCodi
+      }
+      Distrito {
+        DistCodi
+        DistNom
+        ProvCodi
+        destacado
+      }
+      Categorias {
+        categoriaId
+        slugCategoria
+        nombreCategoria
+        descripcionCategoria
+        ImagenPrincipal {
+          id
+          descripcion
+          url
+        }
+        ImagenSecundaria {
+          id
+          descripcion
+          url
+        }
+        KeywordsCategoria
+      }
+      Planos {
+        planoId
+        tituloPlano
+        descripcionCortaPlano
+        descripcionLargaPlano
+      }
+      Asesor {
+        userId
+        alias
+        tipoUsuario
+        nombres
+        apellidos
+        tipoDocumento
+        nroDocumento
+        fechaNacimiento
+        email
+        foto {
+          id
+          descripcion
+          url
+        }
+        estado
+        apiToken
+        Departamento {
+          DeparCodi
+          DeparNom
+        }
+        Provincia {
+          ProvCodi
+          ProvNom
+          DeparCodi
+        }
+        Distrito {
+          DistCodi
+          DistNom
+          ProvCodi
+          destacado
+          estado
+        }
+      }
+    }
+  }
+}

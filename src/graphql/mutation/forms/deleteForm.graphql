@@ -1,0 +1,3 @@
+mutation DeleteFormulario($input: FormularioInput!) {
+  DeleteFormulario(input: $input)
+}

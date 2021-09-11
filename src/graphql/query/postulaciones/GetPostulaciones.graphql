@@ -1,0 +1,20 @@
+query GetAllPostulantes($numberPaginate: Int, $page: Int, $estado: String) {
+  GetAllPostulantes(
+    numberPaginate: $numberPaginate
+    page: $page
+    estado: $estado
+  ) {
+    NroItems
+    data {
+      postulanteId
+      nombre
+      apellidos
+      direccion
+      ciudad
+      email
+      celular
+      descripcion
+      estado
+    }
+  }
+}

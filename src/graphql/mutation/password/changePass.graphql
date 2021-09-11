@@ -1,0 +1,35 @@
+mutation CambiarContrasena($input: CambiarContrasenaInput!) {
+  CambiarContrasena: CambiarContrasenaUsuario(input: $input) {
+    alias
+    email
+    userId
+    nombres
+    apellidos
+    tipoUsuario
+    nroDocumento
+    tipoDocumento
+    fechaNacimiento
+    foto {
+      id
+      descripcion
+      url
+    }
+    estado
+    apiToken
+    Departamento {
+      DeparCodi
+      DeparNom
+    }
+    Provincia {
+      ProvCodi
+      ProvNom
+      DeparCodi
+    }
+    Distrito {
+      DistCodi
+      DistNom
+      ProvCodi
+      destacado
+    }
+  }
+}

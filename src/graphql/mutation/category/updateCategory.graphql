@@ -1,0 +1,19 @@
+mutation UpdateCategorias($input: CategoriasInput!) {
+  UpdateCategorias(input: $input) {
+    categoriaId
+    nombreCategoria
+    slugCategoria
+    descripcionCategoria
+    ImagenPrincipal {
+      id
+      descripcion
+      url
+    }
+    ImagenSecundaria {
+      id
+      descripcion
+      url
+    }
+    KeywordsCategoria
+  }
+}

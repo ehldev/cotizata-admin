@@ -1,0 +1,35 @@
+mutation registro($input: UserInput!) {
+  registro: CrearUsuario(input: $input) {
+    alias
+    email
+    userId
+    nombres
+    apellidos
+    tipoUsuario
+    nroDocumento
+    tipoDocumento
+    fechaNacimiento
+    foto {
+      id
+      url
+      descripcion
+    }
+    estado
+    apiToken
+    Departamento {
+      DeparNom
+      DeparCodi
+    }
+    Provincia {
+      ProvNom
+      ProvCodi
+      DeparCodi
+    }
+    Distrito {
+      DistNom
+      DistCodi
+      ProvCodi
+      destacado
+    }
+  }
+}

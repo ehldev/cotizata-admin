@@ -1,0 +1,53 @@
+.cell-titulo {
+  width: 90%;
+  max-width: 18rem;
+  overflow: hidden;
+}
+
+@media screen and (max-width: 1280px) {
+  .cell-direccion {
+    width: 90%;
+    max-width: 18rem;
+    overflow: hidden;
+  }
+}
+
+.modal {
+  max-width: 70vw;
+  max-height: 70vh;
+}
+
+@media screen and (max-width: 1024px) {
+  .modal {
+    max-width: 90vw;
+    max-height: 50vh;
+    /* height: 200px; */
+  }
+  .image-carousel {
+    width: 100%;
+  }
+}
+
+.box {
+  width: 15rem;
+  height: 10rem;
+  display: grid;
+  margin: 0.5rem;
+  overflow: hidden;
+  border-radius: 1rem;
+  place-items: center;
+  border: 1px solid teal;
+  transition: transform 0.3s ease;
+}
+
+.box img {
+  width: 100%;
+  /* z-index: -1; */
+  object-fit: cover;
+  transform: translateY(-10%);
+}
+
+.box:hover {
+  cursor: pointer;
+  transform: scale(1.05);
+}

@@ -1,0 +1,3 @@
+mutation RecuperarContraUsuario($input: UserInput!) {
+  RecuperarContraUsuario(input: $input)
+}

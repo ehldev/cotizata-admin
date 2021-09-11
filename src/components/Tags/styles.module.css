@@ -1,0 +1,39 @@
+.keyword_ouput {
+  padding-block: 0.25rem;
+  display: flex;
+  flex-wrap: wrap;
+  min-height: 42.52px;
+  align-items: center;
+  padding-inline: 0.5rem;
+  border-radius: 0rem 0rem 0.357rem 0.357rem;
+  justify-content: flex-start;
+  border: 1px solid #404656;
+}
+
+.keyword_input {
+  border-radius: 0.357rem 0.357rem 0rem 0rem;
+}
+
+.keyword_ouput-tag {
+  margin-right: 0.5rem;
+  margin-block: 0.25rem;
+  color: #007f80;
+  font-size: 0.85rem;
+  max-width: max-content;
+  padding: 0.26rem 0.6rem;
+  border-radius: 0.357rem;
+  background-color: rgba(0, 127, 128, 0.12);
+}
+
+.keyword_ouput-tag button.btn-icon {
+  padding: 0;
+}
+
+.keyword_ouput-tag span {
+  margin-right: 0.3rem;
+}
+
+.keyword_ouput-tag svg {
+  fill: #007f80;
+  margin-bottom: 0.2rem;
+}

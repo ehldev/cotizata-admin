@@ -1,0 +1,104 @@
+mutation CrearPropiedades($input: PropiedadesInput!) {
+  CrearPropiedades(input: $input) {
+    propiedadId
+    titulo
+    slug
+    tipoContrato
+    descripcionCorta
+    descripcionCompleta
+    video
+    estado
+    destacado
+    fotoPrincipal {
+      id
+      descripcion
+      url
+    }
+    fotoSecundaria {
+      id
+      descripcion
+      url
+    }
+    galeria {
+      id
+      descripcion
+      url
+    }
+    lat
+    log
+    cuartos
+    banios
+    pisos
+    dimensiones
+    antiguedad
+    areaConstruida
+    ambientes
+    direccion
+    Departamento {
+      DeparCodi
+      DeparNom
+    }
+    Provincia {
+      ProvCodi
+      ProvNom
+      DeparCodi
+    }
+    Distrito {
+      DistCodi
+      DistNom
+      ProvCodi
+      destacado
+    }
+    Categorias {
+      categoriaId
+      slugCategoria
+      nombreCategoria
+      descripcionCategoria
+      ImagenPrincipal {
+        id
+        descripcion
+        url
+      }
+      ImagenSecundaria {
+        id
+        descripcion
+        url
+      }
+      KeywordsCategoria
+    }
+    Asesor {
+      userId
+      alias
+      tipoUsuario
+      nombres
+      apellidos
+      tipoDocumento
+      nroDocumento
+      fechaNacimiento
+      email
+      foto {
+        id
+        descripcion
+        url
+      }
+      estado
+      apiToken
+      Departamento {
+        DeparCodi
+        DeparNom
+      }
+      Provincia {
+        ProvCodi
+        ProvNom
+        DeparCodi
+      }
+      Distrito {
+        DistCodi
+        DistNom
+        ProvCodi
+        destacado
+        estado
+      }
+    }
+  }
+}

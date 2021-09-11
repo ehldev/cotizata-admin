@@ -1,0 +1,54 @@
+.image-container {
+  min-height: 70vh;
+}
+
+.image-box {
+  width: 15rem;
+  height: 10rem;
+  display: grid;
+  margin: 0.5rem;
+  overflow: hidden;
+  border-radius: 1rem;
+  place-items: center;
+  border: 1px solid teal;
+  transition: transform 0.3s ease;
+}
+
+.image-box button {
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+
+  width: 2rem;
+  height: 2rem;
+
+  border: none;
+  outline: none;
+  border-radius: 0.5rem;
+}
+
+.image-box img {
+  width: 100%;
+  /* z-index: -1; */
+  object-fit: contain;
+  /* transform: translateY(0); */
+}
+
+.image-modal {
+  width: 85vw;
+  max-width: 85vw;
+}
+
+.image-box:hover {
+  cursor: pointer;
+  transform: scale(1.05);
+}
+
+.pos-relative {
+  position: relative;
+}
+
+.propiedad-step {
+  justify-self: flex-end;
+  align-self: flex-end;
+}

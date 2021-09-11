@@ -1,0 +1,34 @@
+mutation UpdatePlanos($input: PlanosInput!) {
+  UpdatePlanos(input: $input) {
+    planoId
+    tituloPlano
+    descripcionCortaPlano
+    descripcionLargaPlano
+    foto {
+      id
+      descripcion
+      url
+    }
+    Propiedades {
+      propiedadId
+      titulo
+      slug
+      tipoContrato
+      descripcionCorta
+      descripcionCompleta
+      video
+      estado
+      destacado
+      lat
+      log
+      cuartos
+      banios
+      pisos
+      dimensiones
+      antiguedad
+      areaConstruida
+      ambientes
+      direccion
+    }
+  }
+}

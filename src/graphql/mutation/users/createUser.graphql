@@ -1,0 +1,38 @@
+mutation CrearUsuario($input: UserInput!) {
+  CrearUsuario(input: $input) {
+    userId
+    alias
+    tipoUsuario
+    nombres
+    apellidos
+    tipoDocumento
+    nroDocumento
+    fechaNacimiento
+    email
+    whatsapp
+    facebook
+    celular
+    foto {
+      id
+      descripcion
+      url
+    }
+    estado
+    apiToken
+    Departamento {
+      DeparCodi
+      DeparNom
+    }
+    Provincia {
+      ProvCodi
+      ProvNom
+      DeparCodi
+    }
+    Distrito {
+      DistCodi
+      DistNom
+      ProvCodi
+      destacado
+    }
+  }
+}

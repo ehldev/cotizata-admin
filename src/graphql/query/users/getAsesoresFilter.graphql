@@ -1,0 +1,58 @@
+query GetBusquedaAsesores(
+  $numberPaginate: Int
+  $page: Int
+  $departamento: String
+  $provincia: String
+  $distrito: String
+  $asesor: String
+  $orden: String
+) {
+  GetBusquedaAsesores(
+    numberPaginate: $numberPaginate
+    page: $page
+    departamento: $departamento
+    provincia: $provincia
+    distrito: $distrito
+    asesor: $asesor
+    orden: $orden
+  ) {
+    NroItems
+    data {
+      userId
+      alias
+      tipoUsuario
+      nombres
+      apellidos
+      tipoDocumento
+      nroDocumento
+      fechaNacimiento
+      email
+      foto {
+        id
+        descripcion
+        url
+      }
+      estado
+      apiToken
+      facebook
+      whatsapp
+      celular
+      Departamento {
+        DeparCodi
+        DeparNom
+      }
+      Provincia {
+        ProvCodi
+        ProvNom
+        DeparCodi
+      }
+      Distrito {
+        DistCodi
+        DistNom
+        ProvCodi
+        destacado
+        estado
+      }
+    }
+  }
+}

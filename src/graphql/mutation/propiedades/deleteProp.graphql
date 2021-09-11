@@ -1,0 +1,3 @@
+mutation DeletePropiedades($input: PropiedadesInput!) {
+  DeletePropiedades(input: $input)
+}

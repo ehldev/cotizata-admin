@@ -1,0 +1,52 @@
+.imageWider,
+.imageTaller {
+  overflow: hidden;
+  position: relative;
+  border-radius: 0.25rem;
+}
+
+.imageWider button,
+.imageTaller button {
+  position: absolute;
+  bottom: 0;
+  border: 0;
+  outline: 0;
+  background: #007f80;
+  padding: 0.5rem 0.8rem;
+  opacity: 0;
+
+  box-shadow: 15px -16px 15px -3px rgba(0, 0, 0, 0.1);
+
+  transition: opacity 0.3s ease;
+}
+
+.imageWider:hover button,
+.imageTaller:hover button {
+  opacity: 1;
+}
+
+.imageWider button svg,
+.imageTaller button svg {
+  color: #e2e2e2;
+}
+
+.imageWider:hover,
+.imageTaller:hover {
+  cursor: pointer;
+}
+
+.imageWider img,
+.imageTaller img {
+  width: 100%;
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.imageTaller {
+  grid-row: span 2 / auto;
+  grid-column: span 2 / auto;
+}
+
+.imageWider {
+  grid-column: span 2 / auto;
+}

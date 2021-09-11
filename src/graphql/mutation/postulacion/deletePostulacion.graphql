@@ -1,0 +1,3 @@
+mutation DeletePostulante($input1: PostulantesInput!) {
+  DeletePostulante(input1: $input1)
+}

@@ -1,0 +1,19 @@
+query GetCategoria {
+  GetAllCategorias: GetCategoria {
+    categoriaId
+    slugCategoria
+    nombreCategoria
+    descripcionCategoria
+    ImagenPrincipal {
+      id
+      url
+      descripcion
+    }
+    ImagenSecundaria {
+      id
+      url
+      descripcion
+    }
+    KeywordsCategoria
+  }
+}

@@ -1,0 +1,19 @@
+mutation CrearCategorias($input: CategoriasInput!) {
+  CrearCategorias(input: $input) {
+    categoriaId
+    nombreCategoria
+    slugCategoria
+    descripcionCategoria
+    ImagenPrincipal {
+      id
+      descripcion
+      url
+    }
+    ImagenSecundaria {
+      id
+      descripcion
+      url
+    }
+    KeywordsCategoria
+  }
+}

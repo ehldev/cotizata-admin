@@ -1,0 +1,35 @@
+mutation login($input: loginInput!) {
+  login(input: $input) {
+    alias
+    email
+    userId
+    nombres
+    apellidos
+    tipoUsuario
+    nroDocumento
+    tipoDocumento
+    fechaNacimiento
+    foto {
+      id
+      url
+      descripcion
+    }
+    estado
+    apiToken
+    Departamento {
+      DeparCodi
+      DeparNom
+    }
+    Provincia {
+      ProvCodi
+      ProvNom
+      DeparCodi
+    }
+    Distrito {
+      DistCodi
+      DistNom
+      ProvCodi
+      destacado
+    }
+  }
+}

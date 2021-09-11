@@ -1,0 +1,3 @@
+mutation DeletePlanos($input: PlanosInput!) {
+  DeletePlanos(input: $input)
+}
