@@ -32,7 +32,7 @@ const Routes = [
     component: lazy(() => import('../../views/Sliders'))
   },
   {
-    path: '/crear-slider',
+    path: '/agregar-slider',
     meta: { restrict: true },
     component: lazy(() => import('../../views/Sliders/create'))
   },

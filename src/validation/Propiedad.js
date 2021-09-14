@@ -3,11 +3,10 @@ import * as Yup from 'yup'
 const actualYear = new Date().getFullYear()
 
 export const PropiedadSchema = Yup.object().shape({
-  lat: Yup.string().required('Requerido'),
-  log: Yup.string().required('Requerido'),
-  video: Yup.string().required('Requerido'),
-  titulo: Yup.string().required('Requerido'),
-  estado: Yup.number().required('Requerido'),
+  nombre: Yup.string().required('Requerido'),
+  ruc: Yup.string().required('Requerido'),
+  razonSocial: Yup.string().required('Requerido')
+  /* estado: Yup.number().required('Requerido'),
   destacado: Yup.number().required('Requerido'),
   ambientes: Yup.string().required('Requerido'),
   direccion: Yup.string().required('Requerido'),
@@ -63,5 +62,5 @@ export const PropiedadSchema = Yup.object().shape({
     value: Yup.number()
       .min(1, 'Debes seleccionar un departamento')
       .required('Requerido')
-  })
+  }) */
 })

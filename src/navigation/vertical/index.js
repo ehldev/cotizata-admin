@@ -33,7 +33,7 @@ export default [
         id: 'Agregar',
         title: 'Agregar',
         icon: <Circle size={12} />,
-        navLink: '/crear-slider'
+        navLink: '/agregar-slider'
       }
     ]
   },

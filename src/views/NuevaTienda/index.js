@@ -6,9 +6,9 @@ import Wizard from '@components/wizard'
 import BreadCrumbs from '@components/breadcrumbs'
 
 // ** Steps
-import Planos from './steps/Planos/index'
+import Asesores from './steps/asesores/index'
 import Detalles from './steps/Detalles'
-import Imagenes from './steps/Imagenes/index'
+import Sedes from './steps/sedes/index'
 
 // ** Third Party Components
 import { Home, Image, FilePlus } from 'react-feather'
@@ -131,7 +131,7 @@ const NuevaPropiedad = () => {
       icon: <Image size={18} />,
       subtitle: 'Sedes de la tienda',
       content: (
-        <Imagenes {...{ stepper, state, setState, reset, handleCreatePropi }} />
+        <Sedes {...{ stepper, state, setState, reset, handleCreatePropi }} />
       )
     },
     {
@@ -139,7 +139,9 @@ const NuevaPropiedad = () => {
       title: 'Asesores',
       icon: <FilePlus size={18} />,
       subtitle: 'Asesores de la tienda',
-      content: <Planos {...{ stepper, state, setState, reset, propiedadId }} />
+      content: (
+        <Asesores {...{ stepper, state, setState, reset, propiedadId }} />
+      )
     }
   ]
 
